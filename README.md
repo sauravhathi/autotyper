@@ -4,7 +4,7 @@
 ![image](https://user-images.githubusercontent.com/61316762/154841805-daa1a7dc-ebc1-4e84-8997-4a2dad566bfb.png)
 
 
-``bash
+```bash
   pip install pynput tk times pycopy-webbrowser
   git clone https://github.com/sauravhathi/autotyper.git
 ```

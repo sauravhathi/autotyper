@@ -128,6 +128,8 @@ version.pack(anchor = "s", side = "left")
 
 qut.pack(anchor = "s", side = "right")
 
+root.attributes('-topmost', True)
+
 root.mainloop()
 
 

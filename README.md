@@ -30,3 +30,6 @@ OR
 ```bash
   pip install pycopy-webbrowser
 ```
+
+
+![image](https://user-images.githubusercontent.com/61316762/154842317-a9503273-aadf-43fb-89ca-0246211ee31f.png)

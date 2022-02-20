@@ -80,10 +80,7 @@ root.geometry("600x400")
 root.resizable(0,0)
 
 #windows icon set
-p1 = PhotoImage(file = 'icons.png')
-
-# Setting icon of master window
-root.iconphoto(False, p1)
+root.iconbitmap("icons.ico")
 
 keyboard = Controller()
 

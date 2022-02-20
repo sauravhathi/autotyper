@@ -80,7 +80,10 @@ root.geometry("600x400")
 root.resizable(0,0)
 
 #windows icon set
-root.iconbitmap("icons.ico")
+photo = PhotoImage(file="./res/icons.png")
+
+root.iconphoto(False, photo)
+
 
 keyboard = Controller()
 

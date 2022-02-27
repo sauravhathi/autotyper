@@ -67,10 +67,12 @@
 
 
 import re
-from pynput.keyboard import Controller
+from turtle import delay
+from pynput.keyboard import Controller, Key, Listener
 from tkinter import *
 import tkinter as tk
 import time
+import keyboard as kb
 import webbrowser
 
 root = Tk()
@@ -96,24 +98,28 @@ def callback(event):
 def linebyline():
 
     input1=re.sub(r'\t', '', entry.get(1.0, tk.END+"-1c"))
-    time.sleep(5)
+    time.sleep(4)
     keyboard.type(input1)
 
 def singleline():
 
     input1=re.sub(r'\n', '', entry.get(1.0, tk.END+"-1c"))
-    time.sleep(5)
+    time.sleep(4)
     keyboard.type(input1)
 
 
-entry = tk.Text(root, width=60, height=5)
+entry = tk.Text(root, width=70, height=5)
 entry.pack(ipady=70, pady=(10,20))
 
 button1 = tk.Button(root, text="Single Line", command=singleline, foreground="black", font="Helvetica 12", width=10, cursor=cursor)
 button1.pack(side=tk.TOP)
 
+kb.add_hotkey('ctrl+8', singleline)
+
 button2 = tk.Button(root, text="Line By Line", command=linebyline, foreground="black", font="Helvetica 12", width=10, cursor=cursor)
 button2.pack(side=tk.TOP,pady=(10,20))
+
+kb.add_hotkey('ctrl+9', linebyline)
 
 lbl = Label(root, text="Github",fg='red', highlightthickness=2,highlightbackground = "red", font=('', 20, 'bold'), cursor=cursor)
 lbl.bind("<Button>", lambda e: callback("https:#bit.ly/sauravhathi"))
@@ -131,7 +137,6 @@ qut.pack(anchor = "s", side = "right")
 root.attributes('-topmost', True)
 
 root.mainloop()
-
 
 
 

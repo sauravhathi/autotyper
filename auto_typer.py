@@ -67,8 +67,7 @@
 
 
 import re
-from turtle import delay
-from pynput.keyboard import Controller, Key, Listener
+from pynput.keyboard import Controller
 from tkinter import *
 import tkinter as tk
 import time
@@ -135,7 +134,7 @@ button2.pack(side=tk.TOP,pady=(10,20))
 kb.add_hotkey('ctrl+8', linebyline1)
 
 lbl = Label(root, text="Github",fg='red', highlightthickness=2,highlightbackground = "red", font=('', 20, 'bold'), cursor=cursor)
-lbl.bind("<Button>", lambda e: callback("https:#bit.ly/sauravhathi"))
+lbl.bind("<Button>", lambda e: callback("https://bit.ly/sauravhathi"))
 
 version=tk.Label(root, text="Version: 1.0.0" ,  font=fontSmall)
 

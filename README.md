@@ -4,8 +4,7 @@
 ### Download for windows:
 https://sourceforge.net/projects/auto-typer/
 
-![image](https://user-images.githubusercontent.com/61316762/154841805-daa1a7dc-ebc1-4e84-8997-4a2dad566bfb.png)
-![image](https://user-images.githubusercontent.com/61316762/154841805-daa1a7dc-ebc1-4e84-8997-4a2dad566bfb.png)
+![auto typer by Saurav Hathi](https://user-images.githubusercontent.com/61316762/166089371-0cf22c4b-bb66-42ad-9a79-6f0e86461222.png)
 
 
 ```bash
